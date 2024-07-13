@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dibyangna's Portfolio</title>
+    <!--<link rel="stylesheet" href="styles.css">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@200&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.25rem;
+        }
+
+        main hr{
+           border: 0; 
+           background: rgb(218, 218, 234);
+           height: 1.2px;
+           margin: 60px 84px;
+        }
+        .left {
+            font-size: 1.5rem;
+            font-family: "Playwrite CU", cursive;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+            
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+
+
+        }
+
+        .rightSection img {
+            width: 88%;
+
+        }
+
+        .purple {
+            color: rgb(178, 107, 228);
+        }
+
+        #element {
+            color: rgb(178, 107, 228);
+        }
+        .Aboutsection{
+            max-width: 80vw;
+            margin: auto;
+            height: 50vh;
+        }
+
+        .Projectsection{
+            max-width: 80vw;
+            margin: auto;
+            height: 90vh;
+        }
+.project{
+    display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 50px;
+}
+        .Contactsection{
+            max-width: 80vw;
+            margin: auto;
+            height: 20vh;
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        .secondSection h1{
+           font-size: 1.9rem; 
+        }
+        .secondSection .box{
+            background-color: white;
+            width: 88vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+        .secondSection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+        footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Dibyangna</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div>Hi, I'm <samp class="purple">Dibyangna</samp>
+                    <div> A passionate </div>
+                    <!-- Element to contain animated typing -->
+
+                    <span id="element"></span>
+                </div>
+            </div>
+            <div class="rigtSection">
+                <img src="http://surl.li/frlbit" alt="image">
+            </div>
+        </section>
+        <section id="about" class="Aboutsection">
+            <h2>About Me</h2>
+            <p>Hello! I'm Dibyangna, a dedicated Front End Developer with a Bachelor's degree in Computer Applications (BCA). My expertise lies in HTML, CSS, and JavaScript, and I have hands-on experience in creating responsive, user-friendly websites. 
+                <br><br>
+                During my academic journey, I completed several projects, including a front-end website for a marketing agency. I am skilled in modern web development practices and always strive to stay updated with the latest industry trends.
+                <br><br>
+                I am passionate about delivering high-quality work and continuously improving my skills. In addition to technical abilities, I am a problem-solver and a team player. I enjoy collaborating on projects and bringing creative ideas to life.
+                <br><br>
+                Explore my projects to see the breadth of my work, and feel free to reach out if you're interested in collaborating or have any questions.</p>
+        </section>
+        <hr>
+       
+        <section id="projects" class="Projectsection">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project" >
+                    
+                    <h3>Bank Management System(Dec 2023- Dec 2023)</h3>
+                    <p>The Java Bank Management System is a web-based application
+                        utilizing Java servlets and HTML, tailored to streamline banking
+                        operations for customers and administrators. It encompasses user
+                        registration, authentication, account management, and
+                        transaction processing.
+                       <br> Technologies Used: Java Servlets, HTML/CSS ,MySQL
+                        <br>Key Features:
+                        1.User Registration and Authentication
+                        2.Account Management
+                        3.Transaction Processing
+                        4.Logout Option
+                        </p>
+                </div>
+                <div class="project">
+                
+                    <h3>Website for an agency(Aug 2023- Sept 2023)</h3>
+                    <p>The Marketing Agency Website is a dynamic and visually
+                        appealing web platform developed using HTML, CSS, JavaScript,
+                        and Bootstrap. It serves as an online presence for a marketing
+                        agency, showcasing its services, projects, blog posts, and
+                        providing a means for visitors to contact the agency. The website
+                        consists of several key pages including the home page, about us
+                        page, services page, projects page, blog page, and contact us
+                        page.
+                        <br>Technologies Used: HTML, CSS, JavaScript, Bootstrap
+                        <br>Key Features:
+                        1.Home Page
+                        2.About Us Page
+                        3.Services Page
+                        4.Projects Page
+                        5.Blog Page
+                        6.Contact Us Page</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="Contactsection">
+            <h2>Contact</h2>
+            <p>Email: dibyangna21@gmail.com</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Dibyangna.</p>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
