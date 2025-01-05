@@ -5,17 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dibyangna's Portfolio</title>
-    <!--<link rel="stylesheet" href="styles.css">-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@200&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         body {
@@ -30,6 +28,11 @@
             align-items: center;
             height: 80px;
             background-color: rgb(18, 18, 62);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
         }
 
         nav ul {
@@ -45,6 +48,7 @@
         nav ul li a {
             text-decoration: none;
             color: white;
+            transition: color 0.3s, font-size 0.3s;
         }
 
         nav ul li a:hover {
@@ -52,12 +56,17 @@
             font-size: 1.25rem;
         }
 
-        main hr{
-           border: 0; 
-           background: rgb(218, 218, 234);
-           height: 1.2px;
-           margin: 60px 84px;
+        header {
+            margin-bottom: 80px; /* Prevent overlap with fixed nav */
         }
+
+        main hr {
+            border: 0;
+            background: rgb(218, 218, 234);
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
         .left {
             font-size: 1.5rem;
             font-family: "Playwrite CU", cursive;
@@ -68,7 +77,6 @@
             justify-content: space-around;
             align-items: center;
             margin: 130px 0;
-            
         }
 
         .firstSection>div {
@@ -77,13 +85,10 @@
 
         .leftSection {
             font-size: 3rem;
-
-
         }
 
         .rightSection img {
             width: 88%;
-
         }
 
         .purple {
@@ -93,49 +98,57 @@
         #element {
             color: rgb(178, 107, 228);
         }
-        .Aboutsection{
+
+        .Aboutsection {
             max-width: 80vw;
             margin: auto;
             height: 50vh;
         }
 
-        .Projectsection{
+        .Projectsection {
             max-width: 80vw;
             margin: auto;
             height: 90vh;
         }
-.project{
-    display: flex;
+
+        .project {
+            display: flex;
             justify-content: space-around;
             align-items: center;
             padding: 50px;
-}
-        .Contactsection{
+        }
+
+        .Contactsection {
             max-width: 80vw;
             margin: auto;
             height: 20vh;
         }
-        .secondSection{
+
+        .secondSection {
             max-width: 80vw;
             margin: auto;
             height: 80vh;
         }
-        .secondSection h1{
-           font-size: 1.9rem; 
+
+        .secondSection h1 {
+            font-size: 1.9rem;
         }
-        .secondSection .box{
+
+        .secondSection .box {
             background-color: white;
             width: 88vw;
             height: 2px;
             margin: 56px 0;
             display: flex;
         }
-        .secondSection .vertical{
+
+        .secondSection .vertical {
             height: 93px;
             width: 1px;
             background-color: white;
             margin: 0 100px;
         }
+
         footer {
             display: flex;
             justify-content: space-around;
@@ -170,7 +183,7 @@
                     <span id="element"></span>
                 </div>
             </div>
-            <div class="rigtSection">
+            <div class="rightSection">
                 <img src="http://surl.li/frlbit" alt="image">
             </div>
         </section>
@@ -185,29 +198,29 @@
                 Explore my projects to see the breadth of my work, and feel free to reach out if you're interested in collaborating or have any questions.</p>
         </section>
         <hr>
-       
+
         <section id="projects" class="Projectsection">
             <h2>Projects</h2>
             <div class="projects-container">
-                <div class="project" >
-                    
-                    <h3>Bank Management System(Dec 2023- Dec 2023)</h3>
+                <div class="project">
+
+                    <h3>Bank Management System (Dec 2023 - Dec 2023)</h3>
                     <p>The Java Bank Management System is a web-based application
                         utilizing Java servlets and HTML, tailored to streamline banking
                         operations for customers and administrators. It encompasses user
                         registration, authentication, account management, and
                         transaction processing.
-                       <br> Technologies Used: Java Servlets, HTML/CSS ,MySQL
+                        <br>Technologies Used: Java Servlets, HTML/CSS, MySQL
                         <br>Key Features:
-                        1.User Registration and Authentication
-                        2.Account Management
-                        3.Transaction Processing
-                        4.Logout Option
-                        </p>
+                        1. User Registration and Authentication
+                        2. Account Management
+                        3. Transaction Processing
+                        4. Logout Option
+                    </p>
                 </div>
                 <div class="project">
-                
-                    <h3>Website for an agency(Aug 2023- Sept 2023)</h3>
+
+                    <h3>Website for an agency (Aug 2023 - Sept 2023)</h3>
                     <p>The Marketing Agency Website is a dynamic and visually
                         appealing web platform developed using HTML, CSS, JavaScript,
                         and Bootstrap. It serves as an online presence for a marketing
@@ -218,15 +231,17 @@
                         page.
                         <br>Technologies Used: HTML, CSS, JavaScript, Bootstrap
                         <br>Key Features:
-                        1.Home Page
-                        2.About Us Page
-                        3.Services Page
-                        4.Projects Page
-                        5.Blog Page
-                        6.Contact Us Page</p>
+                        1. Home Page
+                        2. About Us Page
+                        3. Services Page
+                        4. Projects Page
+                        5. Blog Page
+                        6. Contact Us Page
+                    </p>
                 </div>
             </div>
         </section>
+        <hr>
         <section id="contact" class="Contactsection">
             <h2>Contact</h2>
             <p>Email: dibyangna21@gmail.com</p>
